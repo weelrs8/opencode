@@ -8,6 +8,7 @@
 4. [ADR 0001 — aproveitar o OpenCode](architecture/adr/0001-opencode-base.md)
 5. [Backlog inicial](planning/backlog.md)
 6. [Upstream e preparação do fork](research/upstream-and-fork.md)
+7. [Mapeamento do código e lacunas](research/code-map.md)
 
 ## Convenções
 

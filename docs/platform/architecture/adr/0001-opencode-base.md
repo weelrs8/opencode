@@ -27,4 +27,5 @@ Escolher a referência base explicitamente após esclarecer a menção a “Open
 
 Licença MIT conferida. Proprietário/nome: `weelrs8/opencode`. Base documental fixada
 em `0b050ac5cdd995ba8165e0699d4150b3409cfe51` (`dev`). Mapear funcionalidades
-existentes e custo das alterações; esclarecer a referência “OpenCode 2”.
+existentes e custo das alterações. O package.json do commit base declara 2.1.4,
+confirmando que a base é identificada como 2.x. Ver o mapeamento inicial do código.

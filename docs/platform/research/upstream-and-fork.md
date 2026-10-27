@@ -78,3 +78,10 @@ A criação da branch `platform-docs` foi concluída após ajuste de acesso pelo
 Base confirmada: `0b050ac5cdd995ba8165e0699d4150b3409cfe51`. A documentação
 segue para `docs/platform/` nessa branch. Os erros anteriores são histórico da preparação.
 O clone local continua sem nova verificação nesta tentativa.
+
+## Identificação da versão pelo código
+
+A inspeção de `package.json` no commit base confirmou `version: 2.1.4`.
+A menção do usuário a OpenCode 2 é compatível com a base do fork. A release estável
+v1.19.4 consultada anteriormente não descreve a versão dessa branch.
+Ver [mapeamento do código](code-map.md) para evidências e limitações da análise.
