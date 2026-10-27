@@ -1,6 +1,10 @@
 # Fronteiras da arquitetura
 
-Estado: proposta inicial; tecnologias e protocolos ainda não escolhidos.
+Estado: direção aceita para plataforma dentro do OpenCode web; ver [ADR 0002](adr/0002-platform-in-opencode.md).
+
+A plataforma será desenvolvida no fork existente, sem aplicação separada ou extração
+do harness. Ambiente inicial é um diretório local com worktrees reais; Docker fica
+para uma fase posterior. As seções abaixo descrevem responsabilidades, não três serviços.
 
 ## Ambiente
 

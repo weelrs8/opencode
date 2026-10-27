@@ -17,7 +17,7 @@ Priorização proposta para revisão; não representa compromisso de entrega.
 | B11 | Integrar provisionamento, setup e tarefas/worktrees | 07, 08 | Pendente |
 | B12 | Verificar preservação de providers e autenticação por assinatura | 09 | Pendente |
 
-## Primeiro incremento proposto
+## Primeiro incremento histórico — substituído pelo percurso de projeto
 
 Uma solicitação de comando local aguarda decisão na interface web. O usuário permite,
 nega ou nega com motivo. Resultado chega ao agente. Se autorizado, execução interativa
@@ -30,8 +30,8 @@ adicional que depende da configuração do ambiente.
 
 ## Perguntas abertas
 
-- “OpenCode 2” significa uma release, branch, interface ou outro repositório?
-- Qual conta/organização receberá o fork e qual será seu nome?
+- Resolvido: o package.json do fork declara versão 2.1.4.
+- Resolvido: fork `weelrs8/opencode`.
 - Quais caminhos de documentação, ferramentas MCP e comandos devem ser permitidos em plan?
 - Como mesclar permissões e como estabelecer confiança por projeto?
 - Como autenticar elevação local e remota sem expor credenciais ao modelo?
@@ -49,7 +49,7 @@ Ver [mapeamento com fontes](../research/code-map.md). A base declara versão 2.1
 PTY, exportação JSON, hierarquia global/projeto e feedback de negação já têm implementação.
 A ferramenta shell do agente continua não interativa (`stdin: ignore`).
 
-O primeiro incremento recomendado passa a ser **negar com justificativa na web**,
+Na inspeção inicial, o primeiro incremento recomendado passou a ser **negar com justificativa na web**,
 reutilizando API existente. O fluxo integrado de autorização + PTY descrito acima
 permanece como marco seguinte, após especificar a ponte com o ambiente.
 Não houve implementação funcional nem execução de testes nesta inspeção.
@@ -59,3 +59,22 @@ Não houve implementação funcional nem execução de testes nesta inspeção.
 | B13 | Adicionar justificativa opcional de negação no dock e modelo web | Pronto para detalhamento; API já aceita message |
 | B14 | Especificar controle humano e ligação da execução do agente a PTY | Pendente; avaliar PTY comum e persistente |
 | B15 | Verificar diferenças entre export web, export CLI e sessões antigas | Pendente; sanitização e formato diferem |
+
+## Prioridade atual — decisão do usuário em 27/10/2026
+
+A plataforma será a evolução do OpenCode web. Esta decisão substitui as prioridades
+iniciais de PTY e negação com justificativa, que continuam no backlog.
+Ver [ADR 0002](../architecture/adr/0002-platform-in-opencode.md) e
+[critérios do percurso](project-workflow.md).
+
+| Ordem | Entrega | Estado |
+| --- | --- | --- |
+| P01 | Projeto, grupos de worktrees e retomada de sessões | Bases localizadas; código e benchmark pendentes |
+| P02 | Issues e criação de worktree vinculada | Especificação inicial; fonte das issues a definir |
+| P03 | Terminal, status de MCPs, specs e ADRs no projeto | Pendente |
+| P04 | PR, checks de CI, merge e remoção da worktree | Pendente |
+| P05 | Provisionamento de ambientes | Adiado; usar diretórios locais nesta fase |
+
+Bloqueio da implementação: clone falha no proxy do ambiente cloud. As instruções do
+pacote exigem benchmark antes de alterar sessões/timeline. A inspeção pelo conector
+não permite cumprir essa validação. Ver [ambiente de desenvolvimento](development.md).

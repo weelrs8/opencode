@@ -18,3 +18,9 @@
 - ADRs têm estado explícito. Uma proposta não deve ser tratada como decisão aceita.
 - Novas lembranças sobre limitações entram no backlog, vinculadas aos requisitos.
 - Não guardar senhas, tokens, chaves ou sessões reais nestes documentos.
+
+## Direção atual e início da implementação
+
+- [ADR 0002 — plataforma dentro do OpenCode web](architecture/adr/0002-platform-in-opencode.md)
+- [Primeiro percurso funcional](planning/project-workflow.md)
+- [Execução do fork e bloqueio atual](planning/development.md)
