@@ -80,6 +80,12 @@ Organizar projetos, issues detalhadas, specs, ADRs e memória; usar branches, wo
 Suportar múltiplos projetos e tarefas. Sessões devem ser recuperáveis entre dispositivos.
 Documentação versionada e referências de origem são propostas para conhecimento duradouro.
 
+Atualização aceita em 2026-10-27: usar GitHub Issues como fonte, com labels separadas
+para tipo, prioridade e tamanho estimado da implementação. Exibir as três dimensões
+na lista e nos detalhes; permitir filtros e ordenação por prioridade. Vincular a issue
+à worktree e às sessões sem perder a identidade do repositório de origem. Ver
+[ADR 0003](../architecture/adr/0003-github-issues.md).
+
 ## REQ-09 — Múltiplos providers e modalidades de acesso
 
 Preservar acesso a múltiplos providers. Investigar uso do ChatGPT Plus via autenticação

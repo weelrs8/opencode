@@ -43,6 +43,6 @@ mas deixam de ser o primeiro incremento. Provisionamento de ambientes vem depois
 - Preservar limites Schema → Core/Protocol → Server e dependências do Client.
 - Evitar um segundo banco de sessões ou execução paralela de agentes.
 - Mudanças públicas em Protocol/HttpApi exigem regeneração do client conforme AGENTS.md.
-- A fonte inicial de issues (interna ou GitHub) ainda precisa ser definida; não
-  assumir que integrar PR/CI obriga a hospedar todas as issues no GitHub.
+- GitHub Issues é a fonte inicial das tarefas, com classificação de prioridade e
+  tamanho de implementação; ver [ADR 0003](0003-github-issues.md).
 - Esta decisão substitui a sugestão anterior de uma plataforma em repositório separado.

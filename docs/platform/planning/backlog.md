@@ -4,7 +4,7 @@ Priorização proposta para revisão; não representa compromisso de entrega.
 
 | ID | Trabalho | Requisitos | Estado |
 | --- | --- | --- | --- |
-| B01 | Confirmar fork e preparar base documental | Todos | Fork criado; base documental: `dev` em `0b050ac5cdd995ba8165e0699d4150b3409cfe51`; clone local bloqueado pelo proxy |
+| B01 | Confirmar fork e preparar base documental | Todos | Fork criado; base documental: `dev` em `0b050ac5cdd995ba8165e0699d4150b3409cfe51`; checkout e setup validados em 27/10/2026 |
 | B02 | Mapear PTY, execução, permissões, plan, web e exportação no código | 01–06 | Inspeção inicial concluída; ver mapeamento |
 | B03 | Documentar o que já existe e as alterações necessárias | Todos | Mapeamento inicial documentado; validação de execução pendente |
 | B04 | Especificar aprovação local, negação com motivo e cancelamento | 01, 04 | Pendente |
@@ -70,11 +70,16 @@ Ver [ADR 0002](../architecture/adr/0002-platform-in-opencode.md) e
 | Ordem | Entrega | Estado |
 | --- | --- | --- |
 | P01 | Projeto, grupos de worktrees e retomada de sessões | Bases localizadas; código e benchmark pendentes |
-| P02 | Issues e criação de worktree vinculada | Especificação inicial; fonte das issues a definir |
+| P02 | Issues e criação de worktree vinculada | GitHub Issues definido; classificar tipo, prioridade e tamanho por labels |
 | P03 | Terminal, status de MCPs, specs e ADRs no projeto | Pendente |
 | P04 | PR, checks de CI, merge e remoção da worktree | Pendente |
 | P05 | Provisionamento de ambientes | Adiado; usar diretórios locais nesta fase |
 
-Bloqueio da implementação: clone falha no proxy do ambiente cloud. As instruções do
-pacote exigem benchmark antes de alterar sessões/timeline. A inspeção pelo conector
-não permite cumprir essa validação. Ver [ambiente de desenvolvimento](development.md).
+Atualização de 27/10/2026: checkout, instalação e validação do CLI/servidor concluídos.
+O bloqueio de rede anterior foi resolvido. O benchmark de produção exigido antes de
+alterar sessões/timeline continua pendente. Ver [ambiente de desenvolvimento](development.md).
+
+Decisão de produto: usar GitHub Issues e labels para classificar tipo, prioridade e
+tamanho da implementação separadamente. GitHub Projects pode complementar a visualização,
+mas não é requisito da classificação inicial; ver
+[ADR 0003](../architecture/adr/0003-github-issues.md).

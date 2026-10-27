@@ -22,5 +22,6 @@
 ## Direção atual e início da implementação
 
 - [ADR 0002 — plataforma dentro do OpenCode web](architecture/adr/0002-platform-in-opencode.md)
+- [ADR 0003 — GitHub Issues e classificação por labels](architecture/adr/0003-github-issues.md)
 - [Primeiro percurso funcional](planning/project-workflow.md)
 - [Execução do fork e bloqueio atual](planning/development.md)

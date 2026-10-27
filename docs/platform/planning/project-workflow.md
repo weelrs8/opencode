@@ -32,8 +32,10 @@ Critérios de aceite:
 
 ### P02 — Issue como origem do trabalho
 
-Apresentar lista e detalhes da issue com descrição e critérios de aceite.
-Resolver fonte de dados antes de implementar: issues internas ou GitHub.
+Apresentar lista e detalhes de GitHub Issues com descrição, critérios de aceite,
+tipo, prioridade e tamanho estimado da implementação. GitHub é a fonte definida pelo
+usuário, e labels são a representação canônica; ver
+[ADR 0003](../architecture/adr/0003-github-issues.md).
 Manter referência estável à origem; título e número isolados não bastam para
 distinguir repositórios/servidores. A associação deve persistir no backend,
 não apenas no armazenamento de um navegador.
@@ -44,6 +46,10 @@ abre uma sessão. Preparação delegada ao agente é um modo explícito distinto
 
 Critérios de aceite:
 
+- Issues vêm do repositório GitHub associado ao projeto, com paginação e estados
+  de carregamento, vazio, erro e acesso insuficiente.
+- Tipo, prioridade e tamanho aparecem na lista e nos detalhes, com filtros independentes
+  e ordenação por prioridade; classificação ausente ou conflitante fica visível.
 - Worktree fica vinculada à issue e ao projeto corretos.
 - Durante criação/preparação, a interface mostra progresso e impede duplicação
   involuntária da mesma ação por cliques repetidos.
